@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: #f1fbff;
+}
+
+.section-padding {
+    padding: 50px 0;
+}
+
+.carousel-item img{
+    height: 450px;
+}
+
+.carousel-caption {
+    bottom: 220px;
+    z-index: 2;
+}
+
+
+.carousel-inner:before {
+
+    background: rgba(0, 0, 0, 0.7);
+}
+.navbar .getstarted {
+    background: #106eea;
+    margin-left: 30px;
+    border-radius: 4px;
+    font-weight: 400;
+    color: #fff;
+    text-decoration: none;
+    padding: .5rem 1rem;
+    line-height: 2.3;
+}
+
+.navbar-nav a {
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.navbar-light .navbar-brand {
+    color: #000;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-brand:hover {
+    color: #000;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #000;
+}
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+    color:rgb(0, 174, 255);
+}
+
+
+.navbar-toggler {
+    padding: 1px 5px;
+    font-size: 18px;
+    line-height: 0.3;
+    background: #fff;
+}
+
+.list-group-item{
+    font-size: 12px;
+}
+
+.mybtn{
+    background-color: rgb(0, 174, 255);
+    color: white;
+    font-size: 12px;
+}
+.mybtn:hover,
+.fill:focus {
+    background: red;
+    box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+    transform: translateY(-0.25em);
+    color: white;
+    font-size: 13px;
+}
+.accordion-item{
+    background-color: rgb(0, 174, 255);
+    font-weight: bold;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .carousel-caption {
+        bottom: 370px;
+    }
+
+    .carousel-caption p {
+        width: 100%;
+    }
+
+    .card {
+        margin-bottom: 30px;
+    }
+
+    .img-area img {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .carousel-caption {
+        bottom: 125px;
+    }
+    .about-text {
+        font-size: 12px;
+    }
+
+    .card {
+        margin-bottom: 30px;
+    }
+.mybtn {
+    background-color: rgb(0, 174, 255);
+    color: white;
+    font-size: 10px;
+    font-weight: lighter;
+    margin-bottom: 10px;
+}
+}
+
+.offcanvas-body img{
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+/* about */
+.timeline {
+    position: relative;
+    padding: 0;
+    list-style: none;
+}
+
+.timeline:before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 40px;
+    width: 2px;
+    margin-left: -1px;
+    content: "";
+    background-color: #dadde0;
+}
+
+.timeline>li {
+    margin-bottom: 50px;
+}
+
+.timeline>li:after,
+.timeline>li:before {
+    display: table;
+    content: "";
+}
+
+.timeline>li:after {
+    clear: both;
+
+}
+
+.timeline>li .t-panel {
+    padding: 0 20px 0 100px;
+    text-align: left;
+}
+
+.timeline>li .t-image {
+    background-color: white;
+    position: absolute;
+    z-index: 10;
+    width: 80px;
+    height: 80px;
+    margin-left: 0;
+    text-align: center;
+    color: white;
+    border: 7px solid #dadde0;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+}
+
+.timeline>li .t-image:last-child {
+    background-color: rgb(0, 174, 255);
+}
+
+.timeline>li .t-image h4 {
+    font-size: 10px;
+    line-height: 16px;
+    margin-top: 12px;
+}
+
+.timeline .t-heading h4 {
+    margin-top: 0;
+    color: inherit;
+    font-weight: bold;
+    font-family: "Roboto Slab" -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.timeline .t-body>ul,
+.timeline .t-body>p {
+    margin-bottom: 0;
+}
+
+@media(min-width:768px) {
+    .timeline:before {
+        left: 50%;
+    }
+
+    .timeline>li {
+        min-height: 100px;
+        margin-bottom: 100px;
+    }
+
+    .timeline>li .t-panel {
+        float: left;
+        width: 40%;
+        padding: 0 20px 30px 30px;
+        text-align: right;
+    }
+
+    .timeline>li .t-image {
+        left: 50%;
+        width: 100px;
+        height: 100px;
+        margin-left: -50px;
+    }
+
+    .timeline>li .t-image h4 {
+
+        font-size: 13px;
+        line-height: 17px;
+        margin-top: 18px;
+    }
+
+    .timeline>li.t-inverted>.t-panel {
+        float: right;
+        padding: 0 30px 20px 20px;
+        text-align: left;
+
+    }
+}
+
+@media(min-width:992px) {
+    .timeline>li {
+        min-height: 150px;
+    }
+
+    .timeline>li .t-panel {
+        padding: 0 20px 20px;
+
+    }
+
+    .timeline>li .t-image {
+        width: 150px;
+        height: 150px;
+        margin-left: -75px;
+    }
+
+    .timeline>li .t-image h4 {
+        font-size: 19px;
+        line-height: 25px;
+        margin-top: 30px;
+    }
+
+    .timeline>li.t-inverted>.t-panel {
+        padding: 0 20px 20px;
+    }
+}
+
+@media(min-width:1200px) {
+    .timeline>li {
+        min-height: 170px;
+    }
+
+    .timeline>li .t-panel {
+        padding: 0 20px 20px 10px;
+
+    }
+
+    .timeline>li .t-image {
+        width: 175px;
+        height: 175px;
+        margin-left: -89px;
+    }
+
+    .timeline>li .t-image h4 {
+        margin-top: 40px;
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+    .timeline>li.t-inverted>.t-panel {
+        padding: 0 100px 20px 20px;
+    }
+}
+
+.footer-card{
+    background-color: rgb(0, 174, 255);
+}
+
+.bg-color{
+    background-color:slategray ;
+}
+.copy-text{
+    width: 206px;
+}
+
+
+.float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #22e96b;
+    color: black;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px rgb(0, 0, 0);
+    z-index: 100;
+}
+
+.float1 {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    left: 40px;
+    z-index: 100;
+    
+}
+
+.float:hover{
+    color: rgb(255, 255, 255);
+}
+
+.my-float {
+    margin-top: 16px;
+}
+
+.floatp {
+    font-weight: bold;
+    font-size: 11px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+
+/* about end */
